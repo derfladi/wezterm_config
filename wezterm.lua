@@ -12,7 +12,7 @@ config.set_environment_variables = {
 if appearance.is_dark() then
   config.color_scheme = 'Catppuccin Mocha'
 else
-  config.color_scheme = 'Catppuccin Latte	'
+  config.color_scheme = 'Catppuccin Latte'
 end
 
 config.font = wezterm.font('Jetbrains Mono')
@@ -35,6 +35,8 @@ config.window_frame = {
   font_size = 11,
 }
 
+config.initial_cols = 150
+config.initial_rows = 40
 
 local function segments_for_right_status(window)
   return {
